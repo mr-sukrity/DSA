@@ -6,7 +6,8 @@ public:
             int product = 1;
 
             while (temp > 0) {
-                product *= (temp % 10);
+                int digit=(temp % 10);
+                product *= digit;
                 temp /= 10;
             }
 
