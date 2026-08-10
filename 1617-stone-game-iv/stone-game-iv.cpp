@@ -5,9 +5,9 @@ public:
         
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j * j <= i; j++) {
-                if (!dp[i - j * j]) {
-                    dp[i] = true;
-                    break; // Found a winning move
+                if (dp[i - j * j]==false) { //means boob not win
+                    dp[i] = true; //means alice win
+                    break; 
                 }
             }
         }
